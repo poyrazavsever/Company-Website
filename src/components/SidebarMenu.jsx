@@ -24,7 +24,7 @@ const SidebarMenu = () => {
     <div className="w-fit">
 
       <button className={classNames({
-        "absolute top-10 right-10 transition-all !z-50" : true,
+        "fixed top-10 right-10 transition-all !z-50" : true,
         "flex flex-col justify-center items-center gap-1" : !open,
       })}
        onClick={() => open === true ? setOpen(false) : setOpen(true)}>

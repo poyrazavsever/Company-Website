@@ -19,7 +19,7 @@ function App() {
       <SidebarMenu />
       <ToastContainer />
 
-      <div className="mt-12">
+      <div className="pt-12">
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/>

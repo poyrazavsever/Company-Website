@@ -2,16 +2,16 @@ import React from 'react'
 import Icon from '../../components/Icon'
 function Slider() {
 
-  const slider = "w-[90%] h-[90px] m-auto relative grid place-items-center mt-16"
+  const slider = "w-[90%] h-[90px] m-auto relative grid place-items-center mt-16 -z-20"
 
-  const slide = "flex justify-around items-center w-[250px] h-[90px] p-[15px] opacity-40 rounded-sm ml-12"
+  const slide = "flex justify-around items-center w-[250px] h-[90px] p-[15px] opacity-40 rounded-sm ml-12 -z-20"
 
-  const slideIcon = "text-gray-700 w-full"
+  const slideIcon = "text-gray-700 w-full -z-20"
 
-  const slideTest = "text-gray-700 text-xl font-medium w-full"
+  const slideTest = "text-gray-700 text-xl font-medium w-full -z-20"
 
   return (
-    <div className='bg-primary-200 w-screen'>
+    <div className='bg-primary-200 w-screen !-z-20'>
 
       <div className={slider}>
 
