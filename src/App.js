@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 
 //Pages
-import Home from "./pages/Home"
+import Home from "./pages/Home/Home"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Login from "./pages/Login"
@@ -19,14 +19,18 @@ function App() {
       <SidebarMenu />
       <ToastContainer />
 
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/contact" element={<Contact />}/>
-        <Route path="/login" element={<Login />}/>
-        <Route path="/portfolio" element={<Portfolio />}/>
-        <Route path="/repos" element={<Repos />}/>
-      </Routes>
+      <div className="mt-12">
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/contact" element={<Contact />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/portfolio" element={<Portfolio />}/>
+          <Route path="/repos" element={<Repos />}/>
+        </Routes>
+      </div>
+
+      
     </div>
   );
 }

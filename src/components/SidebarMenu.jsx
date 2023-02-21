@@ -24,7 +24,7 @@ const SidebarMenu = () => {
     <div className="w-fit">
 
       <button className={classNames({
-        "absolute top-10 right-10 transition-all desktop:hidden !z-50" : true,
+        "absolute top-10 right-10 transition-all !z-50" : true,
         "flex flex-col justify-center items-center gap-1" : !open,
       })}
        onClick={() => open === true ? setOpen(false) : setOpen(true)}>
@@ -44,8 +44,8 @@ const SidebarMenu = () => {
 
       <div className={classNames({
         "transition-all border-r border-b shadow-xl h-screen fixed bg-white" : true,
-        "mobile:-translate-x-full" : !open,
-        "mobile:translate-x-0" : open
+        "-translate-x-full" : !open,
+        "translate-x-0" : open
       })}>
         <Sidebar aria-label="Sidebar with content separator example">
 
