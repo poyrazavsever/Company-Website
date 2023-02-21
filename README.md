@@ -7,6 +7,7 @@
 4- React Router Dom
 5- Firebase
 6- React Icons
+7- Redux Toolkit
 
 
 ### Detail;
