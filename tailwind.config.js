@@ -8,7 +8,8 @@ module.exports = {
     extend: {
       screens : {
         "mobile" : {"max" : "1023px", "min" : "0px"},
-        "desktop" : {"min": "1024px"}
+        "desktop" : {"min": "1024px"},
+        "animation" : {"max" : "1300px", "min" : "0px"}
       },
     },
   },

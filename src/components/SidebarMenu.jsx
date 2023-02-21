@@ -9,6 +9,7 @@ import { MdOutlineWorkOutline, MdOutlineArticle, MdLogin, MdLanguage } from "rea
 import { FiGitlab } from "react-icons/fi"
 import { RiContactsLine } from "react-icons/ri"
 import { VscColorMode } from "react-icons/vsc"
+import {Turkey, Germany, USA} from "../Icons"
 
 // React Router Dom
 
@@ -42,7 +43,7 @@ const SidebarMenu = () => {
       </button>
 
       <div className={classNames({
-        "transition-all border-r border-b shadow-lg h-screen sticky" : true,
+        "transition-all border-r border-b shadow-xl h-screen fixed bg-white" : true,
         "mobile:-translate-x-full" : !open,
         "mobile:translate-x-0" : open
       })}>
@@ -119,13 +120,16 @@ const SidebarMenu = () => {
                 icon={MdLanguage}
                 label="Change Language"
               >
-                <Sidebar.Item>
+                <Sidebar.Item
+                  icon={Turkey}>
                   Turkish
                 </Sidebar.Item>
-                <Sidebar.Item>
+                <Sidebar.Item
+                  icon={USA}>
                   Engilish
                 </Sidebar.Item>
-                <Sidebar.Item>
+                <Sidebar.Item
+                  icon={Germany}>
                   German
                 </Sidebar.Item>
               </Sidebar.Collapse>
