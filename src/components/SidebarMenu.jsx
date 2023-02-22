@@ -6,7 +6,6 @@ import { Sidebar } from 'flowbite-react'
 // Icon
 import { HiOutlineHome, HiOutlineInformationCircle, HiOutlineMoon, HiOutlineSun } from "react-icons/hi"
 import { MdOutlineWorkOutline, MdOutlineArticle, MdLogin, MdLanguage } from "react-icons/md"
-import { FiGitlab } from "react-icons/fi"
 import { RiContactsLine } from "react-icons/ri"
 import { VscColorMode } from "react-icons/vsc"
 import {Turkey, Germany, USA} from "../Icons"
@@ -76,14 +75,6 @@ const SidebarMenu = () => {
                   icon={MdOutlineWorkOutline}
                 >
                   Portfolio
-                </Sidebar.Item>
-              </NavLink>
-
-              <NavLink to="/repos">
-                <Sidebar.Item
-                  icon={FiGitlab}
-                >
-                  Repos
                 </Sidebar.Item>
               </NavLink>
 
