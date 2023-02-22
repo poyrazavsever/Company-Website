@@ -1,13 +1,17 @@
 import React from 'react'
 import { Timeline } from 'flowbite-react'
 
+import {AiFillStar} from "react-icons/ai"
+
 
 function TimelineSec() {
     return (
 
         <div className='w-full desktop:w-2/3 mx-auto -z-20 mt-32'>
 
-            <Timeline className='!-z-20'>
+            <Timeline className='!-z-20 bg-gray-100 px-24 py-36 shadow-md relative'>
+
+                <AiFillStar className='absolute -top-6 -right-6 text-7xl rotate-12 text-gray-400'/>
 
                 <Timeline.Item>
                     <Timeline.Point />
