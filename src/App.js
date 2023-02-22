@@ -12,10 +12,13 @@ import Repos from "./pages/Repos"
 
 // Components 
 import SidebarMenu from "./components/SidebarMenu";
+import FooterMenu from "./components/Footer"
 
 function App() {
+  
   return (
     <div>
+
       <SidebarMenu />
       <ToastContainer />
 
@@ -29,6 +32,9 @@ function App() {
           <Route path="/repos" element={<Repos />}/>
         </Routes>
       </div>
+
+
+      <FooterMenu />
 
       
     </div>
