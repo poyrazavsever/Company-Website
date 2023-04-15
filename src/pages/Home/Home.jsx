@@ -4,6 +4,7 @@ import React from 'react'
 import HeroSec from './HeroSec'
 import Slider from "./Slider"
 import TimelineSec from './Timeline'
+import Gallery from "./Gallery"
 
 function Home() {
   return (
@@ -14,6 +15,8 @@ function Home() {
       <Slider />
 
       <TimelineSec />
+
+      <Gallery />
 
     </div>
   )
