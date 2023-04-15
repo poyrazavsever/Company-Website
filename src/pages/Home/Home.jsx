@@ -16,8 +16,6 @@ function Home() {
 
       <TimelineSec />
 
-      <Gallery />
-
     </div>
   )
 }
