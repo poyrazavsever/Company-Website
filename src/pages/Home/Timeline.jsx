@@ -1,8 +1,8 @@
 import React from 'react'
 import { Timeline } from 'flowbite-react'
 
-import {AiFillStar} from "react-icons/ai"
-
+import { AiFillStar } from "react-icons/ai"
+import {BsClockHistory} from "react-icons/bs"
 
 function TimelineSec() {
     return (
@@ -11,7 +11,12 @@ function TimelineSec() {
 
             <Timeline className='!-z-20 bg-gray-100 px-24 py-36 shadow-md relative'>
 
-                <AiFillStar className='absolute -top-6 -right-6 text-7xl rotate-12 text-gray-400'/>
+                <h1 className='font-mono font-semibold flex items-center gap-3 text-2xl sm:text-3xl md:text-4xl absolute top-12'>
+                    <span><BsClockHistory className='text-3xl'/></span>
+                    Career Summary
+                </h1>
+
+                <AiFillStar className='absolute -top-6 -right-6 text-7xl rotate-12 text-gray-400' />
 
                 <Timeline.Item>
                     <Timeline.Point />

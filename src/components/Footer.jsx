@@ -8,7 +8,7 @@ function FooterMenu() {
     const iconStyle = "text-neutral-500 text-2xl hover:rotate-[360deg] transition-all duration-500"
     return (
         <div className='pt-32 pb-12'>
-            <div className="w-full sm:flex sm:items-center sm:justify-between desktop:px-32">
+            <div className="w-full flex flex-col gap-5 justify-center items-center desktop:px-32">
                 <a href='/' className='text-neutral-500 hover:text-black transition-all'>© 2023 Poyraz Avsever</a>
 
                 <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
