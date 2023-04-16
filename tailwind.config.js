@@ -13,7 +13,8 @@ module.exports = {
       },
       
       animation: {
-        sliderAnimation: 'scroll 40s linear infinite'
+        sliderAnimation: 'scroll 40s linear infinite',
+        sliderStart: 'sliderStart .5s ease-in-out',
       },
 
 
@@ -21,6 +22,10 @@ module.exports = {
         scroll: {
           '0%' : {transform: 'translateX(0)' },
           '100%': {transform : 'translateX(-3500px)'}
+        },
+        sliderStart: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '100' },
         }
       }
     },
