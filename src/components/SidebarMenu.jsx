@@ -1,142 +1,65 @@
-import React, { useState } from 'react'
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-// Flowbite
-import { Sidebar } from 'flowbite-react'
+// Icons
+import {
+  BiHomeAlt,
+  BiInfoCircle,
+  BiMailSend,
+  BiLogIn
+} from "react-icons/bi"
+import { BsClockHistory } from "react-icons/bs"
+import {GrTextWrap} from "react-icons/gr"
+import { MdOutlineWorkOutline } from "react-icons/md"
+import { VscPinned } from "react-icons/vsc"
+import {CiCircleChevLeft} from "react-icons/ci"
 
-// Icon
-import { HiOutlineHome, HiOutlineInformationCircle, HiOutlineMoon } from "react-icons/hi"
-import { MdOutlineWorkOutline, MdOutlineArticle } from "react-icons/md"
-import { RiContactsLine } from "react-icons/ri"
-import { VscColorMode } from "react-icons/vsc"
-import { AiOutlineInstagram, AiOutlineGithub, } from "react-icons/ai"
-
-// React Router Dom
-
-import { NavLink } from 'react-router-dom'
-import classNames from 'classnames'
-
-const SidebarMenu = () => {
-
-  const [open, setOpen] = useState(false)
+const App = () => {
+  const [open, setOpen] = useState(false);
+  const Menus = [
+    { title: "Home", src: "/", icon: <BiHomeAlt className="text-xl"/> },
+    { title: "About Me", src: "/about", icon: <BiInfoCircle className="text-xl"/> },
+    { title: "Portfolio", src: "/portfolio", icon: <MdOutlineWorkOutline className="text-xl"/> },
+    { title: "Contact ", src: "/contact",  icon: <BiMailSend className="text-xl"/> },
+    { title: "Blog Home", src: "/blog", gap: true, icon: <GrTextWrap className="text-xl"/> },
+    { title: "New Uploads", src: "/blog/new", icon: <BsClockHistory className="text-xl" /> },
+    { title: "Pinned ", src: "/blog/pinned",  icon: <VscPinned className="text-xl"/> },
+    { title: "Login", src: "/login", gap: true, icon: <BiLogIn className="text-xl"/> },
+  ];
 
   return (
-    <div className="w-fit">
+    <div className="flex fixed left-0 top-0">
+      <div className={` ${open ? "w-72 mobile:p-5" : "w-20 mobile:w-[.5px]"} bg-white h-screen desktop:p-5 pt-8 relative duration-300 border-r`} >
 
+        <CiCircleChevLeft className={`absolute cursor-pointer -right-3 top-9 mobile:-right-8 w-8 h-8 text-lg bg-black text-white rounded-full ${!open && "rotate-180"}`}onClick={() => setOpen(!open)} />
 
-      <div className='flex items-center justify-center gap-8 fixed top-9 right-24'>
+        <div className="flex gap-x-3 items-center">
+          <img src="images/logoblack.png" alt="NavbarLogo" className={`cursor-pointer duration-500 w-16 ${open && "rotate-[360deg]"}`} />
+          <h1 className={`text-black origin-left font-medium text-xl duration-200 ${!open && "scale-0"}`}>
+            PAVSEVER.COM
+          </h1>
+        </div>
 
-        <button className='flex items-center justify-center gap-2 text-xl text-zinc-700'>
-          <VscColorMode />
-        </button>
-
-        <button className='flex items-center justify-center gap-2 text-xl text-zinc-700'>
-          <HiOutlineMoon />
-        </button>
-
-      </div>
-
-
-
-      <button className={classNames({
-        "fixed top-10 right-10 transition-all !z-50": true,
-        "flex flex-col justify-center items-center gap-1": !open,
-      })}
-        onClick={() => open === true ? setOpen(false) : setOpen(true)}>
-        <div className={classNames({
-          "w-7 h-[2px] bg-black rounded transition-all": true,
-          "hidden": open
-        })}></div>
-        <div className={classNames({
-          "w-7 h-[2px] bg-black rounded transition-all": true,
-          "rotate-45": open
-        })}></div>
-        <div className={classNames({
-          "w-7 h-[2px] bg-black rounded transition-all": true,
-          "-rotate-45": open
-        })}></div>
-      </button>
-
-      <div className={classNames({
-        "transition-all border-r border-b shadow-xl h-screen fixed bg-white": true,
-        "-translate-x-full": !open,
-        "translate-x-0": open
-      })}>
-
-        <Sidebar aria-label="Sidebar with content separator example">
-
-          <Sidebar.Items>
-
-            <Sidebar.ItemGroup className='relative top-6'>
-
-              <NavLink to="/">
-                <Sidebar.Item
-                  icon={HiOutlineHome}
-                >
-                  Home
-
-                </Sidebar.Item>
-              </NavLink>
-
-              <NavLink to="/about">
-                <Sidebar.Item
-                  href="#"
-                  icon={HiOutlineInformationCircle}
-                >
-                  About
-                </Sidebar.Item>
-              </NavLink>
-
-              <NavLink to="/portfolio">
-                <Sidebar.Item
-                  icon={MdOutlineWorkOutline}
-                >
-                  Portfolio
-                </Sidebar.Item>
-              </NavLink>
-
-              <NavLink to="/portfolio">
-                <Sidebar.Item
-                  icon={AiOutlineGithub}
-                >
-                  Github
-                </Sidebar.Item>
-              </NavLink>
-
-              <NavLink to="/portfolio">
-                <Sidebar.Item
-                  icon={AiOutlineInstagram}
-                >
-                  Instagram
-                </Sidebar.Item>
-              </NavLink>
-
-              <NavLink to="/blog">
-                <Sidebar.Item
-                  icon={MdOutlineArticle}
-                  label="Soon"
-                >
-                  Blog
-                </Sidebar.Item>
-              </NavLink>
-
-              <NavLink to="/contact">
-                <Sidebar.Item
-                  icon={RiContactsLine}
-                >
-                  Contact
-                </Sidebar.Item>
-              </NavLink>
-
-            </Sidebar.ItemGroup>
-
-          </Sidebar.Items>
-
-        </Sidebar>
+        <nav className="pt-6">
+          {Menus.map((Menu, index) => (
+            <NavLink
+              to={Menu.src}
+              key={index}
+              className={`flex rounded-md p-2 cursor-pointer hover:bg-zinc-200 text-zinc-900 font-medium text-sm items-center gap-x-4 
+              ${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-light-white"
+                } `}
+            >
+              {Menu.icon}
+              <span className={`${!open && "hidden"} origin-left duration-200`}>
+                {Menu.title}
+              </span>
+            </NavLink>
+          ))}
+        </nav>
 
       </div>
 
     </div>
-  )
-}
-
-export default SidebarMenu
+  );
+};
+export default App;
