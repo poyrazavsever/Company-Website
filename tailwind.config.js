@@ -14,7 +14,7 @@ module.exports = {
       
       animation: {
         sliderAnimation: 'scroll 40s linear infinite',
-        sliderStart: 'sliderStart .5s ease-in-out',
+        sliderStart: 'sliderStart .6s ease-in-out',
       },
 
 

@@ -63,9 +63,9 @@ function DesignCard({ way, link1, link2, link3, header, text, viewLink }) {
 
                     </div>
 
-                    <div className='w-1/2 flex flex-col items-start justify-center gap-4'>
+                    <div className='w-1/2 flex flex-col items-start justify-center gap-10'>
 
-                        <h1 className='text-lg md:text-2xl lg:text-3xl font-medium'>{header}</h1>
+                        <h1 className='text-lg md:text-2xl lg:text-3xl font-semibold'>{header}</h1>
 
                         <p className='text-base md:text-lg text-zinc-800'>{text}</p>
 
@@ -118,9 +118,9 @@ function DesignCard({ way, link1, link2, link3, header, text, viewLink }) {
 
                     </div>
 
-                    <div className='w-1/2 flex flex-col items-start justify-center gap-4'>
+                    <div className='w-1/2 flex flex-col items-start justify-center gap-10'>
 
-                        <h1 className='text-lg md:text-2xl lg:text-3xl font-medium'>{header}</h1>
+                        <h1 className='text-lg md:text-2xl lg:text-3xl font-semibold'>{header}</h1>
 
                         <p className='text-base md:text-lg text-zinc-800'>{text}</p>
 
