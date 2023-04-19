@@ -5,10 +5,10 @@ import { ToastContainer } from 'react-toastify';
 //Pages
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
-import Contact from "./pages/Contact"
+import Contact from "./pages/Contact/Contact"
 import Login from "./pages/Login"
 import Portfolio from "./pages/Portfolio/Portfolio"
-import Repos from "./pages/Repos"
+import Services from "./pages/Services/Services"
 
 // Components 
 import SidebarMenu from "./components/SidebarMenu";
@@ -29,7 +29,7 @@ function App() {
           <Route path="/contact" element={<Contact />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/portfolio" element={<Portfolio />}/>
-          <Route path="/repos" element={<Repos />}/>
+          <Route path="/services" element={<Services />}/>
         </Routes>
       </div>
 
