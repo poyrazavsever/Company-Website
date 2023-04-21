@@ -49,11 +49,11 @@ function HeroSec() {
                                             height="24"
                                         />
                                     </svg>
-                                    <span className="relative">A yo</span>
-                                </span>ung, eager and lazy software developer
+                                    <span className="relative">Lor</span>
+                                </span>em, ipsum dolor
                             </h2>
                             <p className="text-base text-gray-700 md:text-lg">
-                                A developer based in Turkey. A Front-End developer. Always eager to learn something new, but also lazy. His computer is his best friend and companion. Do you want to know him?
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi atque doloremque ad, eius dolorum provident facilis earum aperiam rerum illo alias itaque deleniti laboriosam corporis corrupti repellat commodi neque quo?
                             </p>
                         </div>
                         <div>
@@ -61,7 +61,7 @@ function HeroSec() {
                                 href="/about"
                                 className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide bg-neutral-900 text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none hover:bg-neutral-600"
                             >
-                                Get to know him
+                               Lorem, ipsum.
                             </a>
                         </div>
                     </div>

@@ -22,11 +22,7 @@ const App = () => {
     { title: "About Me", src: "/about", icon: <BiInfoCircle className="text-xl"/> },
     { title: "Portfolio", src: "/portfolio", icon: <MdOutlineWorkOutline className="text-xl"/> },
     { title: "Services", src: "/services", icon: <RiHandCoinLine className="text-xl"/> },
-    { title: "Contact ", src: "/contact",  icon: <BiMailSend className="text-xl"/> },
-    { title: "Blog Home", src: "/blog", gap: true, icon: <GrTextWrap className="text-xl"/> },
-    { title: "New Uploads", src: "/blog/new", icon: <BsClockHistory className="text-xl" /> },
-    { title: "Pinned ", src: "/blog/pinned",  icon: <VscPinned className="text-xl"/> },
-    { title: "Login", src: "/login", gap: true, icon: <BiLogIn className="text-xl"/> },
+    { title: "Contact ", src: "/contact",  icon: <BiMailSend className="text-xl"/> }
   ];
 
   return (
