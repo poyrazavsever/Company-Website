@@ -1,4 +1,4 @@
-# Portfolio App
+# company website
 ### I used these technologies;
 
 1- React
