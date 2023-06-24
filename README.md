@@ -1,8 +1,8 @@
-# Weather App
+# Company Website
 
-Bu sitedeki amacım tecrübe kazanmak ve bir proje ortaya çıkartmaktı. 
-Kafamdan bir şirket düşledim ve onun için bir web sitesi kodladım. 
-Bu web sitesinde gereken çoğu şey var. Aşağıda özelliklerini sıraladım.
+The purpose of this website was to gain experience and create a project. 
+I envisioned a company in my mind and coded a website for it. This website 
+includes most of the necessary components. Below, I have listed its features.
 
 
 ## Features:
