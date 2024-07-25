@@ -11,42 +11,42 @@ function Designs() {
 
         <DesignCard
           way="right"
-          link1="images/designs/butik1.PNG"
-          link2="images/designs/butik2.PNG"
-          link3="images/designs/butik3.PNG"
+          link1="images/designs/pavs1.PNG"
+          link2="images/designs/pavs1.PNG"
+          link3="images/designs/pavs1.PNG"
           header="Butik Elbise Website Tasarımı"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam pariatur modi mollitia aspernatur error tempora vel quibusdam architecto? Perspiciatis possimus vero qui dolore doloribus aperiam accusamus nulla quod excepturi."
-          viewLink="https://www.figma.com/file/S8AYMcm2Mr1NVORvY8P6sx/E-ticaret-Web-Site?node-id=0%3A1&t=vwdfnSnr1IPKbp4P-1"
-        />
-
-        <DesignCard
-          way="left"
-          link1="images/designs/pavori1.PNG"
-          link2="images/designs/pavori2.PNG"
-          link3="images/designs/pavori3.PNG"
-          header="Butik Elbise Website Tasarımı"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam pariatur modi mollitia aspernatur error tempora vel quibusdam architecto? Perspiciatis possimus vero qui dolore doloribus aperiam accusamus nulla quod excepturi."
-          viewLink="https://www.figma.com/file/S8AYMcm2Mr1NVORvY8P6sx/E-ticaret-Web-Site?node-id=0%3A1&t=vwdfnSnr1IPKbp4P-1"
-        />
-
-        <DesignCard
-          way="right"
-          link1="images/designs/irect1.PNG"
-          link2="images/designs/irect2.PNG"
-          link3="images/designs/irect3.PNG"
-          header="Butik Elbise Website Tasarımı"
-          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam pariatur modi mollitia aspernatur error tempora vel quibusdam architecto? Perspiciatis possimus vero qui dolore doloribus aperiam accusamus nulla quod excepturi."
-          viewLink="https://www.figma.com/file/S8AYMcm2Mr1NVORvY8P6sx/E-ticaret-Web-Site?node-id=0%3A1&t=vwdfnSnr1IPKbp4P-1"
+          viewLink="/"
         />
 
         <DesignCard
           way="left"
           link1="images/designs/pavs1.PNG"
-          link2="images/designs/pavs2.PNG"
-          link3="images/designs/pavs3.PNG"
+          link2="images/designs/pavs1.PNG"
+          link3="images/designs/pavs1.PNG"
           header="Butik Elbise Website Tasarımı"
           text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam pariatur modi mollitia aspernatur error tempora vel quibusdam architecto? Perspiciatis possimus vero qui dolore doloribus aperiam accusamus nulla quod excepturi."
-          viewLink="https://www.figma.com/file/S8AYMcm2Mr1NVORvY8P6sx/E-ticaret-Web-Site?node-id=0%3A1&t=vwdfnSnr1IPKbp4P-1"
+          viewLink="/"
+        />
+
+        <DesignCard
+          way="right"
+          link1="images/designs/pavs1.PNG"
+          link2="images/designs/pavs1.PNG"
+          link3="images/designs/pavs1.PNG"
+          header="Butik Elbise Website Tasarımı"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam pariatur modi mollitia aspernatur error tempora vel quibusdam architecto? Perspiciatis possimus vero qui dolore doloribus aperiam accusamus nulla quod excepturi."
+          viewLink="/"
+        />
+
+        <DesignCard
+          way="left"
+          link1="images/designs/pavs1.PNG"
+          link2="images/designs/pavs1.PNG"
+          link3="images/designs/pavs1.PNG"
+          header="Butik Elbise Website Tasarımı"
+          text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos magnam pariatur modi mollitia aspernatur error tempora vel quibusdam architecto? Perspiciatis possimus vero qui dolore doloribus aperiam accusamus nulla quod excepturi."
+          viewLink="/"
         />
 
       </div>
